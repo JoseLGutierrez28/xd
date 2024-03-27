@@ -413,6 +413,7 @@ a:hover {
 .section-proyectos {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .carousel-proyectos {
@@ -622,6 +623,11 @@ footer {
 
     .scene {
         width: 89%;
+    }
+
+    .carousel-proyectos {
+        transform: translateZ(-460px);
+        /* estaba en -288px */
     }
 
     /* -------------------------------------------------------------------- Footer seccion -------------------------------------------------------------------- */
