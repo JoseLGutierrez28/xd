@@ -53,4 +53,27 @@ document.addEventListener('DOMContentLoaded', function () {
         rotateCarousel();
     })
 
+
+    // ------------------------------- Mostrar mas certificados -------------------------------
+    const button = document.querySelector('.skills__more');
+    let isExpanded = false;
+
+    function toggleVerMas() {
+        isExpanded = !isExpanded; // Cambiar el estado del botón
+
+        const elemento = document.querySelector(`.last-certificates`);
+
+        if (isExpanded) {
+            elemento.style.display = 'block'; // Mostrar el elemento
+            elemento.style.display = 'contents'; // Organizarlos
+        } else {
+            elemento.style.display = 'none'; // Ocultar el elemento
+        }
+
+        // Cambiar el texto del botón según el estado
+        button.textContent = isExpanded ? 'Ver menos' : 'Ver mas';
+    }
+
+    button.onclick = toggleVerMas;
+
 });

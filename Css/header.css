@@ -63,7 +63,7 @@ i {
     flex-wrap: wrap;
 }
 
-a:hover {
+a:hover, i:hover {
     color: #85bcff;
 }
 
@@ -566,6 +566,70 @@ svg {
 /* -------------------------------------------------------------------- Quinta seccion -------------------------------------------------------------------- */
 /* -------------------------------------------------------------------- Quinta seccion -------------------------------------------------------------------- */
 
+.section-certificados {
+    background: linear-gradient(180deg, #040828 25%, #0a0744 90%);
+    padding: 100px 0px 100px 0px;
+}
+
+.certificados {
+    padding: 100px 15px;
+    background-color: #F7F9FA;
+}
+
+.skill-card {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1.5rem;
+    width: 80%;
+    max-width: 80%;
+    margin: 3rem auto 0
+}
+
+.skill-card__header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .5rem
+}
+
+.skill-card__header--image {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%
+}
+
+.skill-card__header--info {
+    margin-left: 8px;
+}
+
+.skill-card__description {
+    font-weight: 400;
+    font-size: .9em;
+    letter-spacing: .02em;
+    border-top: 1px solid white;
+    padding: .5rem;
+    line-height: 1.5;
+    transition: color .4s ease-in-out
+}
+
+.containerbuttonmorecertificates {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.last-certificates {
+    display: none;
+}
 
 
 
@@ -577,7 +641,7 @@ svg {
 /* -------------------------------------------------------------------- Footer seccion -------------------------------------------------------------------- */
 
 footer {
-    background: linear-gradient(0deg, #02023c 25%, #000000 90%);
+    background-color: black;
     padding: 40px 0px 40px 0px;
 }
 
@@ -638,7 +702,7 @@ footer {
         transform: translateZ(-460px);
     }
 
-    .bloc_button{
+    .bloc_button {
         gap: 160px;
     }
 
