@@ -254,8 +254,13 @@ a:hover {
 /* -------------------------------------------------------------------- Tercera seccion -------------------------------------------------------------------- */
 
 .three-section {
-    background: linear-gradient(180deg, #040828 25%, #0a0744 90%);
+    /* background: linear-gradient(180deg, #040828 25%, #0a0744 90%); */
     padding: 100px 0px 100px 0px;
+    background-image: url(../Img/shape.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(30 35 46/1);
+    background-position: center;
 }
 
 .title-sections-dark {
@@ -387,7 +392,7 @@ a:hover {
 
 .arrow-servicios {
     font-size: 40px;
-    background-color: #0a0744;
+    background-color: transparent;
 }
 
 /* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
@@ -621,12 +626,16 @@ footer {
     /* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
     /* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
 
-    .scene {
+    /* .scene {
         width: 89%;
-    }
+    } */
 
     .carousel-proyectos {
         transform: translateZ(-460px);
+    }
+
+    .bloc_button{
+        gap: 160px;
     }
 
     /* -------------------------------------------------------------------- Footer seccion -------------------------------------------------------------------- */
