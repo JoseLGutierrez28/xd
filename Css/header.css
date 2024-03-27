@@ -1,0 +1,638 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", "sans-serif";
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font-size-icons-header: 2.6rem;
+    --font-size-links-header: 1.4rem;
+    --color-white: white;
+    --font-size-responsive-title: clamp(32px, 4vw, 40px);
+    --font-size-responsive-subtitle: clamp(24px, 4vw, 24px);
+    --font-size-responsive-text: clamp(18px, 4vw, 18px);
+
+
+    --dark-blue: #1c2739;
+    --darker-blue: #141c29;
+    --light-blue: #3c4759;
+    --text-color: #dadada;
+    --dark-blue-shadow: #111822ab;
+}
+
+header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    padding: 36px;
+    z-index: 999;
+}
+
+nav {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 210px;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: var(--font-size-links-header);
+    color: var(--color-white);
+}
+
+i {
+    font-size: var(--font-size-icons-header);
+    color: var(--color-white);
+}
+
+.links-header {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.icons-header {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+a:hover {
+    color: #85bcff;
+}
+
+.menu-hamburguesa {
+    display: none;
+}
+
+.links-mobile {
+    display: none;
+}
+
+/* -------------------------------------------------------------------- Primera seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Primera seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Primera seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Primera seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Primera seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Primera seccion -------------------------------------------------------------------- */
+
+.first-section {
+    background-image: url("../Img/primera1.jpg");
+    /* background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../Img/first-image.webp'); */
+    height: 100vh;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.container-first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: clamp(330px, 50%, 600px);
+    gap: 48px;
+    border-radius: 12px;
+    padding: 16px 8px;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    border: 2px solid white;
+}
+
+.title-name {
+    font-size: var(--font-size-responsive-title);
+    font-weight: 400;
+}
+
+.subtitlePresentation {
+    font-size: var(--font-size-responsive-subtitle);
+}
+
+.descriptionPresentation {
+    font-size: var(--font-size-responsive-text);
+    line-height: 1.5;
+}
+
+/* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
+
+.second-section {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 204px), 1fr));
+    background-image: radial-gradient(circle at 28% 90%, rgba(113, 113, 113, 0.03) 0%, rgba(113, 113, 113, 0.03) 24%, transparent 24%, transparent 100%), radial-gradient(circle at 84% 65%, rgba(173, 173, 173, 0.03) 0%, rgba(173, 173, 173, 0.03) 45%, transparent 45%, transparent 100%), radial-gradient(circle at 46% 12%, rgba(141, 141, 141, 0.03) 0%, rgba(141, 141, 141, 0.03) 22%, transparent 22%, transparent 100%), radial-gradient(circle at 26% 14%, rgba(119, 119, 119, 0.03) 0%, rgba(119, 119, 119, 0.03) 35%, transparent 35%, transparent 100%), radial-gradient(circle at 81% 90%, rgba(42, 42, 42, 0.03) 0%, rgba(42, 42, 42, 0.03) 40%, transparent 40%, transparent 100%), radial-gradient(circle at 28% 100%, rgba(234, 234, 234, 0.03) 0%, rgba(234, 234, 234, 0.03) 56%, transparent 56%, transparent 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+    padding: 100px 0px 100px 0px;
+}
+
+.container-foto {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photo-profile {
+    padding: 12px;
+    background-color: #e3e2e2;
+    border-radius: 20px;
+    width: clamp(200px, 46%, 240px);
+}
+
+.main-circle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.available-work {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: var(--font-size-responsive-text);
+}
+
+.circle-us {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #4daa57;
+    position: absolute;
+}
+
+.circle-us::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgba(0, 128, 0, 0.5);
+    animation: ripples 2s linear infinite;
+}
+
+@keyframes ripples {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.8);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2.6);
+        opacity: 0;
+    }
+}
+
+.container-text-sobremi {
+    padding: 0px clamp(20px, calc(8vw), 160px) 0px clamp(20px, calc(8vw), 0px);
+}
+
+.title-sections {
+    font-size: 22px;
+    text-decoration: underline;
+    text-decoration-color: linear-gradient(180deg, #040828 25%, #0a0744 90%);
+    text-decoration-thickness: 5px;
+    margin-bottom: 24px;
+}
+
+.hello-soy {
+    font-size: var(--font-size-responsive-subtitle);
+    font-weight: bold;
+    text-align: center;
+}
+
+.name-span {
+    color: #0c5698;
+    font-size: var(--font-size-responsive-subtitle);
+}
+
+.text-description {
+    line-height: 24px;
+    font-size: 15px;
+    margin-top: 14px;
+    text-align: justify;
+}
+
+.container-download-cv {
+    margin-top: 36px;
+}
+
+.download-cv {
+    margin-top: 36px;
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #040828 25%, #0a0744 90%);
+    border-radius: 12px;
+}
+
+/* -------------------------------------------------------------------- Tercera seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Tercera seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Tercera seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Tercera seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Tercera seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Tercera seccion -------------------------------------------------------------------- */
+
+.three-section {
+    background: linear-gradient(180deg, #040828 25%, #0a0744 90%);
+    padding: 100px 0px 100px 0px;
+}
+
+.title-sections-dark {
+    font-size: 22px;
+    text-decoration: underline;
+    text-decoration-color: #b5b5b5;
+    text-decoration-thickness: 5px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: white;
+}
+
+.main-div {
+    display: grid;
+    place-items: center;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    border: none;
+}
+
+.carousel {
+    position: relative;
+    width: min(35rem, 100% - 4rem);
+    min-height: 30rem;
+    margin-top: 4rem;
+}
+
+.carousel__item {
+    background-color: white;
+    border-radius: 0.5rem;
+    position: absolute;
+    transform-origin: top;
+    transition: all 1s cubic-bezier(0.28, 0.55, 0.385, 1.65);
+    width: 320px;
+    text-align: center;
+    border-top: 4px solid #007BFF;
+    padding: 68px 28px;
+}
+
+.language {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #D6ECFF;
+    padding: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.lineblackmyservives {
+    width: 40%;
+    margin: auto;
+    color: #000;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.textdescription {
+    line-height: 24px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.carousel__item:nth-child(1) {
+    z-index: 6;
+    top: 1rem;
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+.carousel__item:nth-child(2) {
+    z-index: 5;
+    top: 0;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.carousel__item:nth-child(3) {
+    z-index: 4;
+    top: -1rem;
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.carousel__item:nth-child(4) {
+    z-index: 4;
+    top: -2rem;
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+.carousel__item:nth-child(n+5) {
+    z-index: 3;
+    top: -3rem;
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.carousel__item:nth-child(n+6) {
+    z-index: 3;
+    top: -4rem;
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+@keyframes fade-out-back {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in-front {
+    from {
+        top: 1rem;
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.controls {
+    margin-top: 130px;
+    display: flex;
+    gap: 40px;
+}
+
+.arrow-servicios {
+    font-size: 40px;
+    background-color: #0a0744;
+}
+
+/* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
+
+.center-title-misproyectos {
+    text-align: center;
+}
+
+.scene {
+    position: relative;
+    perspective: 1500px;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    margin-top: 68px;
+}
+
+.section-proyectos {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-proyectos {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translateZ(-278px);
+}
+
+.carousel_cell {
+    position: absolute;
+    width: 300px;
+    height: 360px;
+    left: 10px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: #000000;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.containerServices {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerimg {
+    position: relative;
+    width: 260px;
+    height: 168px;
+    background-color: #3b82f6;
+    border-radius: 16px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -48px;
+    margin-left: -8px;
+}
+
+.imgprojects {
+    border-radius: 12px;
+}
+
+figcaption {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 8px;
+}
+
+.titleMysprojects {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.textdescription-projetcs {
+    position: absolute;
+    padding: 24px;
+    margin-top: 120px;
+    line-height: 24px;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.btnredmoremyproject {
+    background-color: #3b82f6;
+    border-radius: 12px;
+    border: 1px solid #3b82f6;
+    padding: 10px 20px;
+    margin-top: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.btnredmoremyproject:hover,
+.containerimg:hover {
+    box-shadow: 5px 5px 10px #18336e, -5px -5px 10px #0d0c0c;
+}
+
+.carousel_cell:nth-child(1) {
+    transform: rotateY(0deg) translateZ(350px);
+}
+
+.carousel_cell:nth-child(2) {
+    transform: rotateY(51.43deg) translateZ(350px);
+}
+
+.carousel_cell:nth-child(3) {
+    transform: rotateY(102.86deg) translateZ(350px);
+}
+
+.carousel_cell:nth-child(4) {
+    transform: rotateY(154.29deg) translateZ(350px);
+}
+
+.carousel_cell:nth-child(5) {
+    transform: rotateY(205.71deg) translateZ(350px);
+}
+
+.carousel_cell:nth-child(6) {
+    transform: rotateY(257.14deg) translateZ(350px);
+}
+
+.carousel_cell:nth-child(7) {
+    transform: rotateY(308.57deg) translateZ(350px);
+}
+
+.carousel_cell:hover {
+    box-shadow: 5px 5px 10px #18336e, -5px -5px 10px #0d0c0c;
+}
+
+.bloc_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 280px;
+    gap: 300px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+svg {
+    width: 32px;
+}
+
+/* -------------------------------------------------------------------- Quinta seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Quinta seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Quinta seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Quinta seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Quinta seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Quinta seccion -------------------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------------------- Footer seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Footer seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Footer seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Footer seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Footer seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Footer seccion -------------------------------------------------------------------- */
+
+footer {
+    background: linear-gradient(0deg, #02023c 25%, #000000 90%);
+    padding: 40px 0px 40px 0px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconsFooter {
+    font-size: 28px;
+    color: white;
+}
+
+@media(max-width:970px) {
+    .links-header {
+        display: none;
+    }
+
+    .links-mobile {
+        display: none;
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    .links-mobile li {
+        margin-bottom: 12px;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    nav {
+        gap: 0px;
+        justify-content: space-between;
+    }
+
+    /* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
+
+    .title-sections {
+        text-align: center;
+        margin: 48px;
+    }
+
+    /* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
+
+    .scene {
+        width: 89%;
+    }
+
+    /* -------------------------------------------------------------------- Footer seccion -------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------- Footer seccion -------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------- Footer seccion -------------------------------------------------------------------- */
+
+}
