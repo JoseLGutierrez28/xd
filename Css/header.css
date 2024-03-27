@@ -274,8 +274,12 @@ a:hover {
 }
 
 .main-div {
-    display: grid;
-    place-items: center;
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .prev,
