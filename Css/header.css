@@ -101,7 +101,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: clamp(330px, 50%, 600px);
+    width: clamp(350px, 50%, 600px);
     gap: 48px;
     border-radius: 12px;
     padding: 16px 8px;
