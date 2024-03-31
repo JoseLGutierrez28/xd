@@ -84,7 +84,7 @@ i:hover {
 /* -------------------------------------------------------------------- Primera seccion -------------------------------------------------------------------- */
 
 .first-section {
-    background-image: url("../Img/primera1.jpg");
+    background-image: url("../Img/first-image.webp");
     /* background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../Img/first-image.webp'); */
     height: 100vh;
     max-width: 100%;
@@ -108,7 +108,6 @@ i:hover {
     padding: 16px 8px;
     background-color: transparent;
     backdrop-filter: blur(4px);
-    /* border: 2px solid white; */
 }
 
 .title-name {
@@ -120,23 +119,23 @@ i:hover {
     font-size: var(--font-size-responsive-subtitle);
     background: linear-gradient(90deg, #000, #fff, #fff);
     letter-spacing: 5px;
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* background-repeat: no-repeat; */
     background-size: 80%;
     animation: shine 5s linear infinite;
-    position: relative;
+    /* position: relative; */
 }
 
 @keyframes shine {
-    0%{
+    0% {
         background-position-x: -500%;
     }
-    100%{
+
+    100% {
         background-position-x: 500%;
     }
-    
+
 }
 
 .descriptionPresentation {
@@ -144,12 +143,12 @@ i:hover {
     line-height: 1.5;
 }
 
-/* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- Segunda seccion -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Seccion SOBRE MI -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Seccion SOBRE MI -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Seccion SOBRE MI -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Seccion SOBRE MI -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Seccion SOBRE MI -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- Seccion SOBRE MI -------------------------------------------------------------------- */
 
 .second-section {
     max-width: 100%;
@@ -158,122 +157,6 @@ i:hover {
     background-image: radial-gradient(circle at 28% 90%, rgba(113, 113, 113, 0.03) 0%, rgba(113, 113, 113, 0.03) 24%, transparent 24%, transparent 100%), radial-gradient(circle at 84% 65%, rgba(173, 173, 173, 0.03) 0%, rgba(173, 173, 173, 0.03) 45%, transparent 45%, transparent 100%), radial-gradient(circle at 46% 12%, rgba(141, 141, 141, 0.03) 0%, rgba(141, 141, 141, 0.03) 22%, transparent 22%, transparent 100%), radial-gradient(circle at 26% 14%, rgba(119, 119, 119, 0.03) 0%, rgba(119, 119, 119, 0.03) 35%, transparent 35%, transparent 100%), radial-gradient(circle at 81% 90%, rgba(42, 42, 42, 0.03) 0%, rgba(42, 42, 42, 0.03) 40%, transparent 40%, transparent 100%), radial-gradient(circle at 28% 100%, rgba(234, 234, 234, 0.03) 0%, rgba(234, 234, 234, 0.03) 56%, transparent 56%, transparent 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
     padding: 100px 0px 100px 0px;
 }
-
-.container-foto {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-}
-
-.photo-profile {
-    padding: 12px;
-    background-color: #e3e2e2;
-    border-radius: 20px;
-    width: clamp(200px, 46%, 240px);
-}
-
-.main-circle {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 12px;
-}
-
-.available-work {
-    text-decoration: none;
-    color: black;
-    margin-left: 20px;
-    font-size: var(--font-size-responsive-text);
-}
-
-.circle-us {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #4daa57;
-    position: absolute;
-}
-
-.circle-us::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 50%;
-    background-color: rgba(0, 128, 0, 0.5);
-    animation: ripples 2s linear infinite;
-}
-
-@keyframes ripples {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    50% {
-        transform: scale(1.8);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(2.6);
-        opacity: 0;
-    }
-}
-
-.container-text-sobremi {
-    padding: 0px clamp(20px, calc(8vw), 160px) 0px clamp(20px, calc(8vw), 0px);
-}
-
-.title-sections {
-    font-size: 22px;
-    text-decoration: underline;
-    text-decoration-color: linear-gradient(180deg, #040828 25%, #0a0744 90%);
-    text-decoration-thickness: 5px;
-    margin-bottom: 24px;
-}
-
-.hello-soy {
-    font-size: var(--font-size-responsive-subtitle);
-    font-weight: bold;
-    text-align: center;
-}
-
-.name-span {
-    color: #0c5698;
-    font-size: var(--font-size-responsive-subtitle);
-}
-
-.text-description {
-    line-height: 24px;
-    font-size: 15px;
-    margin-top: 14px;
-    text-align: justify;
-}
-
-.container-download-cv {
-    margin-top: 36px;
-}
-
-.download-cv {
-    margin-top: 36px;
-    padding: 10px 20px;
-    background: linear-gradient(180deg, #040828 25%, #0a0744 90%);
-    border-radius: 12px;
-}
-
-
-
-/* -------------------------------------------------------------------- FotoCiruclar seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- FotoCiruclar seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- FotoCiruclar seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- FotoCiruclar seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- FotoCiruclar seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- FotoCiruclar seccion -------------------------------------------------------------------- */
 
 .main-container {
     display: flex;
@@ -323,6 +206,60 @@ i:hover {
     width: 86%;
     animation: Rotate-reverse 20s linear infinite;
     -webkit-animation: Rotate-reverse 20s linear infinite;
+}
+
+.circle-us {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #4daa57;
+    position: absolute;
+}
+
+.circle-us::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgba(0, 128, 0, 0.5);
+    animation: ripples 2s linear infinite;
+}
+
+.main-circle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.available-work {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: var(--font-size-responsive-text);
+}
+
+@keyframes ripples {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.8);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2.6);
+        opacity: 0;
+    }
 }
 
 .icon-block:first-child {
@@ -470,12 +407,46 @@ i:hover {
     }
 }
 
-/* -------------------------------------------------------------------- FotoCircular seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- FotoCircular seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- FotoCircular seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- FotoCircular seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- FotoCircular seccion -------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- FotoCircular seccion -------------------------------------------------------------------- */
+.container-text-sobremi {
+    padding: 0px clamp(20px, calc(8vw), 160px) 0px clamp(20px, calc(8vw), 0px);
+}
+
+.title-sections {
+    font-size: 22px;
+    text-decoration: underline;
+    text-decoration-color: linear-gradient(180deg, #040828 25%, #0a0744 90%);
+    text-decoration-thickness: 5px;
+    margin-bottom: 24px;
+}
+
+.hello-soy {
+    font-size: var(--font-size-responsive-subtitle);
+    font-weight: bold;
+    text-align: center;
+}
+
+.name-span {
+    color: #0c5698;
+    font-size: var(--font-size-responsive-subtitle);
+}
+
+.text-description {
+    line-height: 24px;
+    font-size: 15px;
+    margin-top: 14px;
+    text-align: justify;
+}
+
+.container-download-cv {
+    margin-top: 36px;
+}
+
+.download-cv {
+    margin-top: 36px;
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #040828 25%, #0a0744 90%);
+    border-radius: 12px;
+}
 
 /* -------------------------------------------------------------------- Tercera seccion -------------------------------------------------------------------- */
 /* -------------------------------------------------------------------- Tercera seccion -------------------------------------------------------------------- */
@@ -485,9 +456,8 @@ i:hover {
 /* -------------------------------------------------------------------- Tercera seccion -------------------------------------------------------------------- */
 
 .three-section {
-    /* background: linear-gradient(180deg, #040828 25%, #0a0744 90%); */
     padding: 100px 0px 100px 0px;
-    background-image: url(../Img/shape.svg);
+    background-image: url("../Img/shape.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgb(30 35 46/1);
@@ -505,8 +475,6 @@ i:hover {
 }
 
 .main-div {
-    /* display: grid;
-    place-items: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -919,8 +887,18 @@ footer {
 
     .title-sections {
         text-align: center;
-        margin: 48px;
+        margin: 32px;
     }
+
+    .second-section {
+        padding: 4px 0px 60px 0px;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 404px), 1fr));  
+    }
+
+    .main-circle{
+        margin-left: 70px;
+    }
+
 
     /* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */
     /* -------------------------------------------------------------------- Cuarta seccion -------------------------------------------------------------------- */

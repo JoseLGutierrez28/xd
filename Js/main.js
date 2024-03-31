@@ -1,5 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // ------------------------------- Muestra el loader -------------------------------
+    const loader = document.querySelector(".first-container");
+    const loaderHamster = document.querySelector(".container-loader");
+
+    // ------------------------------- Oculta el loader después de 2 segundos -------------------------------
+    setTimeout(function () {
+        loaderHamster.style.display = "none";
+        loader.style.display = "block";
+    }, 2000);
+
+
     // ------------------------------- Menu hamburguesa ------------------------------- 
     var menuMobile = document.querySelector('.links-mobile');
     document.getElementById('menu').addEventListener('click', function () {
