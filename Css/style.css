@@ -827,7 +827,7 @@ footer {
     padding: 40px 0px 40px 0px;
 }
 
-footer div h3{
+footer div h3 {
     font-size: var(--font-size-responsive-subtitle);
     text-decoration: underline;
     text-decoration-thickness: 5px;
@@ -886,8 +886,16 @@ footer div h3{
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 404px), 1fr));
     }
 
+    #certificados {
+        padding-top: 68px;
+    }
+
     .main-circle {
         margin-left: 70px;
+    }
+
+    .three-section {
+        padding: 60px 0px 100px 0px;
     }
 
 
